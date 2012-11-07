@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+<soap12:Body>
+<Tick xmlns="http://demo.com/test/test">
+<Request>
+<Username> <%= trans_id %> </Username>
+<Password>string</Password>
+<AcquirerId>int</AcquirerId>
+<RequestType>string</RequestType>
+<ExpirePreauth>unsignedByte</ExpirePreauth>
+<BitPerSec>int</BitPerSec>
+<Office>string</Office>
+</Request>
+</Tick>
+</soap12:Body>
+</soap12:Envelope>

@@ -1,0 +1,23 @@
+Seife
+
+Seife is a simple soap tool for testing or for integration 
+The programm is so easy that you can implement the idea in any language in real world applications.
+
+What is soap ?
+Soap is a kind of communication protokoll which is based on xml.
+In 99% it uses http post request to communicate.
+It calls remote methods (defined in the xml) which return a result. There are a lot of frameworks around soap but mainly its a simple http post to a http adress, which can even be done with curl.
+
+The idea behind seife is to define a soap request in a file as a template, to fill out the template and post it.
+The template can be filled out for example in seife with the ruby ERB Parser.
+Now a response comes back. This response can be parsed by dom or simply by regex.
+In practice I use soapui to get the request content which I copy and paste in the request file for seife, Then the placeholders for the parser are inserted.
+There is one example in seife.
+
+Seife is not a programm out of the box. It is an idea to deal with soap without the complexity of a fully featured framework.
+
+tserv.rb is a testserver (you need the sinatra gem) to which can be posted
+
+ruby seife.rb 
+
+
